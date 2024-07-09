@@ -106,14 +106,14 @@ const App = () => {
         onChange={(e) => handleChange(e, "followUp")}
       />
 
-      <h1 className="text-black text-xl mb-4">Notes:</h1>
+      <h1 className="text-black text-xl mb-4">Instructions:</h1>
       <input
         className="mb-4 p-2 border border-gray-300 rounded bg-white text-black w-[400px]"
         value={formData.notes}
         onChange={(e) => handleChange(e, "notes")}
       />
 
-      <h1 className="text-black text-xl mb-4">Instructions:</h1>
+      <h1 className="text-black text-xl mb-4">Lifestyle recommendations :</h1>
       {formData.instructions.map((instruction, index) => (
         <div key={index} className="mb-4">
           <input
