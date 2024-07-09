@@ -1,2 +1,28 @@
 [
+  {
+    "chiefComplaint": "",
+    "templateName": "",
+    "followUp": "",
+    "notes": "lksamflkcsdfds,cndewkjfnjewkf,nfewkjkwkjnf",
+    "instructions": [
+      ""
+    ],
+    "diagnosis": [
+      ""
+    ],
+    "medications": [
+      {
+        "drugName": "",
+        "dose": "",
+        "measurement": "",
+        "timing": "",
+        "duration": "",
+        "frequency": "",
+        "notes": ""
+      }
+    ],
+    "labInvestigations": [
+      ""
+    ]
+  }
 ]

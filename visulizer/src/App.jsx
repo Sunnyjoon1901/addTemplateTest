@@ -74,7 +74,7 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8000/saveData', formData);
+      const response = await axios.post('http://localhost:3000/saveData', formData);
       alert(response.data);
     } catch (error) {
       console.error(error);
@@ -113,28 +113,12 @@ const App = () => {
         onChange={(e) => handleChange(e, "notes")}
       />
 
-      <h1 className="text-black text-xl mb-4">Lifestyle recommendations :</h1>
-      {formData.instructions.map((instruction, index) => (
-        <div key={index} className="mb-4">
-          <input
-            className="mb-2 p-2 border border-gray-300 rounded bg-white text-black w-[400px]"
-            value={instruction}
-            onChange={(e) => handleArrayChange(e, index, "instructions")}
-          />
-          <button
-            className="ml-2 p-2 bg-red-500 text-white rounded"
-            onClick={() => deleteFromArray(index, "instructions")}
-          >
-            Delete Instruction
-          </button>
-        </div>
-      ))}
-      <button
-        className="mb-4 p-2 bg-blue-500 text-white rounded"
-        onClick={() => addToArray("instructions")}
-      >
-        Add Instruction
-      </button>
+<h1 className="text-black text-xl mb-4">LifeStyle Recom:</h1>
+      <input
+        className="mb-4 p-2 border border-gray-300 rounded bg-white text-black w-[400px]"
+        value={formData.instructions}
+        onChange={(e) => handleChange(e, "instructions")}
+      />
 
       <h1 className="text-black text-xl mb-4">Diagnosis:</h1>
       {formData.diagnosis.map((diag, index) => (
